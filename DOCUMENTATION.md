@@ -25,7 +25,6 @@ Dự án được tổ chức như sau:
 ├── khong-khi-ngay-xuan.html: Bài viết về Không khí ngày xuân
 ├── main.html               : Trang chủ
 ├── members.html            : Giới thiệu thành viên
-├── README.md               : Tài liệu chung của dự án
 ├── style.css               : File CSS chính
 ├── audio/
 │   └── nhac.m4a            : Nhạc nền Tết
