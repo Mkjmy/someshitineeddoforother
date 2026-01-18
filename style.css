@@ -13,8 +13,8 @@ body {
   display: block;
   height: 500px;
   width: 100%;
-  max-width: 800px; /* Constrain max width for better centering on large screens */
-  margin: 0 auto; /* Center the block element */
+  max-width: 800px; 
+  margin: 0 auto; 
 }
 
 .audio-container {
@@ -47,7 +47,7 @@ body {
   list-style: none;
   padding: 0;
   margin: 0;
-  display: inline-block; /* To center the ul */
+  display: inline-block; 
 }
 
 #menu li {
@@ -151,10 +151,10 @@ body {
   background-color: #555;
   color: white;
   text-align: center;
-  padding: 20px; /* Increased padding */
-  border: 2px solid #555; /* Added border */
-  border-radius: 10px; /* Rounded corners */
-  margin-top: 30px; /* Added margin-top for separation */
+  padding: 20px; 
+  border: 2px solid #555; 
+  border-radius: 10px;
+  margin-top: 30px; 
 }
 
 .card-container {
@@ -175,7 +175,7 @@ body {
   text-decoration: none;
   color: #333;
   transition: box-shadow 0.3s ease, transform 0.3s ease;
-  height: 380px; /* Hardcoded fixed height as per user request */
+  height: 380px;
 }
 
 .section-link-card:hover {
@@ -184,11 +184,11 @@ body {
 }
 
 .section-link-card img {
-  width: 100%; /* Make image fill the card width */
-  height: 150px; /* Give a fixed height */
+  width: 100%; 
+  height: 150px; 
   object-fit: cover;
   border-radius: 8px;
-  margin-bottom: 15px; /* Space between image and text */
+  margin-bottom: 15px; 
 }
 
 .section-link-card .card-text-content {
@@ -295,6 +295,7 @@ body {
         font-weight: bold;
     }
 }
+
 
 
 
