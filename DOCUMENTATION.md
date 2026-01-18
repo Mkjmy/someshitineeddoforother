@@ -1,110 +1,116 @@
-# Project Documentation: Báo Tường Tết Nguyên Đán
+Tài liệu Dự án: Báo Tường Tết Nguyên Đán
 
-This document provides an overview and guide to the "Báo Tường Tết Nguyên Đán" (Tet New Year Wall Newspaper) project. It is designed to help anyone understand its structure, content, and how to interact with it.
+Tài liệu này cung cấp phần tổng quan và hướng dẫn cho dự án “Báo Tường Tết Nguyên Đán”.
+Mục đích là giúp mọi người hiểu rõ cấu trúc, nội dung và cách sử dụng website.
 
-## 1. Project Overview
+1. Tổng quan dự án
 
-This project is a simple, static website designed as an e-magazine or "wall newspaper" focusing on Vietnamese Lunar New Year (Tết Nguyên Đán) traditions and culture. It serves as an informative and engaging presentation for a school project by "Nhóm 5 STEM 12".
+Dự án là một website tĩnh đơn giản, được thiết kế như một tạp chí điện tử / báo tường online về văn hoá và truyền thống Tết Nguyên Đán Việt Nam.
+Đây là sản phẩm học tập của Nhóm 5 STEM 12.
 
-**Key Features:**
-*   **Main Page:** An index page with navigation to various articles and multimedia content.
-*   **Informative Articles:** Dedicated pages for specific Tet traditions (e.g., Bánh Chưng, Spring Atmosphere).
-*   **Interactive Elements:** Embedded video, audio, and a comment/wish submission form.
-*   **Team Introduction:** A page listing the project members.
-*   **Styling:** Consistent visual design across all pages.
+Các chức năng chính:
 
-## 2. File Structure
+Trang chính: Trang trung tâm, điều hướng đến các bài viết và nội dung đa phương tiện.
 
-The project is organized into the following directories and files:
+Bài viết thông tin: Các trang riêng về các phong tục Tết (ví dụ: Bánh Chưng, Không khí ngày xuân).
 
-```
+Yếu tố tương tác: Có video, âm thanh và form gửi lời chúc/bình luận.
+
+Giới thiệu nhóm: Trang hiển thị danh sách thành viên.
+
+Giao diện: Thiết kế trực quan, đồng bộ giữa các trang.
+
+2. Cấu trúc thư mục
+
+Dự án được tổ chức như sau:
+
 /home/jmy/someshit/
-├── .gitattributes
-├── banh-chung.html         // Article: Bánh Chưng (Chung Cake)
-├── gui-loi-chuc.html       // Page: Send New Year Wishes/Comments
-├── khong-khi-ngay-xuan.html // Article: Spring Atmosphere
-├── main.html               // Main entry point/Homepage
-├── members.html            // Page: Team Members Introduction
-├── README.md               // (This file - if project uses README for general info)
-├── style.css               // External stylesheet for main.html
-├── audio/
-│   └── nhac.m4a            // Tet-themed background music
-├── pic/
-│   ├── bangtrung.jpg       // Image: Bánh Chưng (used in main.html thumbnail)
-│   ├── chotet.jpg          // Image: Spring Market (used in main.html thumbnail)
-│   └── nam_and_lion.png    // Image: (Present in folder, but currently unused in HTML)
-└── video/
-    └── am_thuc.mp4         // Video: Tet Cuisine (embedded in main.html)
-```
+├── banh-chung.html         : Bài viết về Bánh Chưng
+├── gui-loi-chuc.html       : Trang gửi lời chúc/bình luận
+├── khong-khi-ngay-xuan.html: Bài viết về Không khí ngày xuân
+├── main.html               : Trang chủ
+├── members.html            : Giới thiệu thành viên
+├── README.md               : Tài liệu chung của dự án
+├── style.css               : File CSS chính
+├── audio/nhac.m4a          : Nhạc nền Tết
+├── pic/                    : Hình ảnh
+└── video/am_thuc.mp4       : Video ẩm thực Tết
 
-## 3. Page Breakdown
+3. Mô tả từng trang
+main.html – Trang chủ
 
-### `main.html` (Homepage/Index)
-*   **Purpose:** The central hub of the project. It introduces the theme of Tet and provides navigation to other detailed content pages.
-*   **Content:**
-    *   **Header:** Project title and slogan.
-    *   **Navigation:** Links to sections within `main.html` (Introduction, Articles, Photos, Music & Video) and to `gui-loi-chuc.html`.
-    *   **Introduction (`#gioi-thieu`):** Text about the significance of Tet.
-    *   **Music & Video (`#am-nhac`):** Features an embedded video (`video/am_thuc.mp4`) and an audio player (`audio/nhac.m4a`).
-    *   **Main Topics (`#bai-viet`):** Links to `banh-chung.html` and `khong-khi-ngay-xuan.html` using visually appealing card layouts.
-    *   **New Year Wishes (`#binh-luan`):** A button leading to the `gui-loi-chuc.html` form.
-    *   **Footer:** Project credits, contact, and references.
-*   **Styling:** Uses the external `style.css` file.
+Mục đích: Trung tâm của website, giới thiệu chủ đề Tết và liên kết đến các trang khác.
 
-### `banh-chung.html`
-*   **Purpose:** Provides detailed information about the "Bánh Chưng - Bánh Giầy" tradition during Tet.
-*   **Content:** Text describing the symbolism of Bánh Chưng, accompanied by relevant images. A "Back to main page" button is included.
-*   **Styling:** Contains internal CSS, embedding all styles from `style.css` directly within its `<head>` section.
+Nội dung:
 
-### `gui-loi-chuc.html`
-*   **Purpose:** Allows users to submit New Year wishes or comments through a simple form.
-*   **Content:** A form with fields for name, email, and a message. Includes a "Back to main page" button.
-*   **Styling:** Contains internal CSS, embedding all styles from `style.css` directly within its `<head>` section.
+Tiêu đề và khẩu hiệu dự án.
 
-### `khong-khi-ngay-xuan.html`
-*   **Purpose:** Describes the festive atmosphere of Tet, with a focus on specific elements like cherry blossoms.
-*   **Content:** Text explaining the Tet atmosphere and a section about cherry blossoms with an image. Includes a "Back to main page" button.
-*   **Styling:** Contains internal CSS, embedding all styles from `style.css` directly within its `<head>` section.
+Thanh điều hướng.
 
-### `members.html`
-*   **Purpose:** Introduces the team members of the project.
-*   **Content:** A table listing the names and sequential numbers of the team members. Includes a "Back to homepage" button.
-*   **Styling:** Contains internal CSS, embedding all styles from `style.css` directly within its `<head>` section.
+Phần giới thiệu ý nghĩa Tết.
 
-## 4. Styling (`style.css`)
+Video và nhạc nền.
 
-The `style.css` file defines the visual presentation of the entire project.
-*   **Global Styles:** Sets font family (`Arial, sans-serif`), removes default margins, and applies a fixed, full-cover background image.
-*   **Structural Styling:** Styles `header`, `menu`, `content`, `footer`, and general container elements for consistent layout.
-*   **Navigation (`#menu`):** Center-aligned list items for navigation links.
-*   **Content Cards (`.card-container`, `.section-link-card`):** Uses flexbox for responsive card layouts, with defined widths, padding, borders, shadows, and hover effects.
-*   **Forms (`#comment-form`):** Provides basic styling for input fields, text areas, and buttons.
-*   **Tables (`.members-table`):** Styles for a clear and readable table, including responsive adjustments for smaller screens (table cells stack vertically).
-*   **Multimedia:** Styles for video and audio players, ensuring they are responsive and well-placed.
-*   **Color Palette:** Utilizes a scheme with red, yellow, and various shades of blue and grey, contributing to a festive yet clean aesthetic.
-*   **Responsiveness:** Includes a media query (`@media (max-width: 768px)`) to optimize the layout for smaller devices, particularly affecting tables.
+Các bài viết chính (Bánh Chưng, Không khí ngày xuân).
 
-## 5. Multimedia Assets
+Nút chuyển sang trang gửi lời chúc.
 
-The project incorporates various multimedia files to enhance the user experience:
-*   **Audio:** `audio/nhac.m4a` (Tet-themed music for background or specific sections).
-*   **Video:** `video/am_thuc.mp4` (Video related to Tet cuisine).
-*   **Images:**
-    *   `pic/bangtrung.jpg`: Thumbnail for Bánh Chưng article.
-    *   `pic/chotet.jpg`: Thumbnail for Spring Atmosphere article.
-    *   `pic/nam_and_lion.png`: An additional image in the `pic` folder, but not currently used in any of the HTML files.
-    *   External images are also used (e.g., in `banh-chung.html`, `khong-khi-ngay-xuan.html`).
-    *   The background image `Hinh-nen-tet-2025-cho-may-tinh-10` referenced in `style.css` is assumed to be an external or missing asset.
+Footer thông tin dự án.
 
-## 6. How to View the Project
+Giao diện: Sử dụng file style.css.
 
-To view this project, simply open the `main.html` file in any web browser.
-All other HTML files are linked from `main.html` and can be navigated to by clicking the respective links.
+banh-chung.html
 
-## 7. Potential Enhancements
+Trình bày chi tiết về truyền thống Bánh Chưng – Bánh Giầy.
 
-*   **Semantic HTML:** Further refactor `div` elements into more semantic HTML5 tags where appropriate for better accessibility and structure.
-*   **JavaScript Interactivity:** Add JavaScript for features like form validation, dynamic content loading, or interactive galleries.
-*   **External Assets:** Ensure all referenced external images are properly sourced or locally stored.
-*   **Accessibility:** Improve accessibility features for users with disabilities.
-*   **Consistent Styling:** While `main.html` uses external CSS and other pages embed it, a fully external CSS approach for all pages might be cleaner for larger projects.
+Có hình ảnh minh hoạ và nút quay về trang chủ.
+
+CSS được nhúng trực tiếp trong file.
+
+gui-loi-chuc.html
+
+Trang nhập lời chúc/bình luận.
+
+Form gồm: tên, email, nội dung lời chúc.
+
+Có nút quay về trang chủ.
+
+CSS nhúng trong file.
+
+khong-khi-ngay-xuan.html
+
+Mô tả không khí Tết và các hình ảnh hoa xuân.
+
+Có nút quay về trang chủ.
+
+CSS nhúng trong file.
+
+members.html
+
+Bảng danh sách thành viên nhóm.
+
+Có nút quay về trang chủ.
+
+CSS nhúng trong file.
+
+4. Giao diện – style.css
+
+File này dùng để:
+
+Thiết lập font chữ, màu sắc và nền trang.
+
+Thiết kế header, menu, nội dung, footer.
+
+Tạo thẻ bài viết dạng “card”.
+
+Trang trí form và bảng.
+
+Đảm bảo hiển thị tốt trên thiết bị nhỏ (responsive).
+
+5. Tài nguyên đa phương tiện
+
+Âm thanh: audio/nhac.m4a
+
+Video: video/am_thuc.mp4
+
+Hình ảnh: thư mục pic/
